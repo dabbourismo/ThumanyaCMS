@@ -361,3 +361,25 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+!Thumanya.Shared/
+!Thumanya.DataAccessLayer/
+!Thumanya.BusinessLayer/
+
+# But still exclude their build outputs
+Thumanya.Shared/[Bb]in/
+Thumanya.Shared/[Oo]bj/
+Thumanya.DataAccessLayer/[Bb]in/
+Thumanya.DataAccessLayer/[Oo]bj/
+Thumanya.BusinessLayer/[Bb]in/
+Thumanya.BusinessLayer/[Oo]bj/
+
+# Include the project files explicitly
+!Thumanya.Shared/**/*.csproj
+!Thumanya.DataAccessLayer/**/*.csproj
+!Thumanya.BusinessLayer/**/*.csproj
+
+# Include all source files
+!Thumanya.Shared/**/*.cs
+!Thumanya.DataAccessLayer/**/*.cs
+!Thumanya.BusinessLayer/**/*.cs
